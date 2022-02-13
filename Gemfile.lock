@@ -97,6 +97,10 @@ GEM
     erubi (1.10.0)
     execjs (2.8.1)
     ffi (1.15.5)
+    font-awesome-rails (4.7.0.8)
+      railties (>= 3.2, < 8.0)
+    font-awesome-sass (5.15.1)
+      sassc (>= 1.11)
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.9.1)
@@ -217,6 +221,8 @@ GEM
       parser (>= 3.0.1.1)
     ruby-progressbar (1.11.0)
     rubyzip (2.3.2)
+    sass-rails (6.0.0)
+      sassc-rails (~> 2.1, >= 2.1.1)
     sassc (2.4.0)
       ffi (~> 1.9)
     sassc-rails (2.1.2)
@@ -281,6 +287,8 @@ DEPENDENCIES
   bootstrap
   byebug
   capybara (~> 2.13)
+  font-awesome-rails
+  font-awesome-sass
   importmap-rails
   jbuilder
   jquery-rails
@@ -289,6 +297,8 @@ DEPENDENCIES
   rails (~> 7.0.2, >= 7.0.2.2)
   rspec-rails (~> 4)
   rubocop
+  sass-rails
+  sassc-rails
   selenium-webdriver
   simplecov
   simplecov-console
