@@ -1,0 +1,57 @@
+<div class="user-profile">
+  <div class="profile row">
+    <div class="col-md-4 avatar">
+      <div class="wrapper">
+        <img src="https://scontent.fbrs4-2.fna.fbcdn.net/v/t39.30808-6/269938136_4732288780223960_2004795302643008557_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=174925&_nc_ohc=sE3p60Tcw7QAX_e8G1B&_nc_ht=scontent.fbrs4-2.fna&oh=00_AT9rZH2HCthoIoSr5XqRIctLjD_dKKaH1InsbmdZ7vLCBQ&oe=620F47A7">
+      </div>
+    </div>
+    
+    <div class="col-md-8 basic-info">
+      <div class="user-wrapper">
+        <h2 class="username"><%= current_user.username %></h2>
+              
+        <a class="edit-profile" href="<%= edit_user_path(current_user) %>">
+            <button>Edit Profile</button>
+        </a>
+      </div>
+      <h2 class="bio"><%= current_user.bio %></h2> 
+      <ul class="posts">
+        <li><span>120</span> posts</li>
+        <li><span>195 million</span> followers</li>
+        <li><span>34</span> following</li>
+      </ul>
+      <h2 class="name"><%= current_user.name %></h2>
+       <%=link_to current_user.website, current_user.website, class:  'website' %>
+    </div>
+  </div>
+</div>
+<div class="user-tabs">
+  <a class="tab active" href="">
+    <i class="fa fa-th"></i>
+    POSTS
+  </a>
+  <a class="tab" href="">
+    <i class="fa fa-tv"></i>
+    IGTV
+  </a>
+  <a class="tab" href="">
+    <i class="fa fa-bookmark"></i>
+    SAVED
+  </a>
+  <a class="tab" href="">
+    <i class="fa fa-tag"></i>
+    TAGGED
+  </a>
+</div>
+<div class="user-images">
+  <div class="wrapper">
+    <img src="https://scontent.fbrs4-1.fna.fbcdn.net/v/t1.6435-9/79773803_2717962274989964_7475430517588885504_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=174925&_nc_ohc=YGZ9vSDhgUQAX-vMEMD&_nc_ht=scontent.fbrs4-1.fna&oh=00_AT80-NC7FL5coH-iLFsmy6Dq8LyRNoXhRyYuepHnpEkeUg&oe=622D9BAD">
+  </div>
+  <div class="wrapper">
+    <img src="https://scontent.fbrs4-1.fna.fbcdn.net/v/t1.6435-9/60454435_2328357827283746_8716384064191332352_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=174925&_nc_ohc=2dl5-o76A9QAX89CwKP&_nc_ht=scontent.fbrs4-1.fna&oh=00_AT8Yv3vnvQ-7_6vfLRUtVZ0eCpaMjtuz0VYzgwGsVwL1MA&oe=622EE510">
+  </div>
+  <div class="wrapper">
+    <img src="https://scontent.fbrs4-1.fna.fbcdn.net/v/t1.6435-9/181472138_4013017742151071_3444251418493599592_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=PZu3EBewTIoAX_hUjca&_nc_ht=scontent.fbrs4-1.fna&oh=00_AT98ts23hj7eY9ZcsANi0ATadoFq-bgYiE0wS1Zcg5Gu_w&oe=622FD08B">
+  </div>
+</div>
+
